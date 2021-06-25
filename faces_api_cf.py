@@ -13,7 +13,7 @@ def detect_faces_uri(uri):
     likelihood_name = ('UNKNOWN', 'VERY_UNLIKELY', 'UNLIKELY', 'POSSIBLE',
                        'LIKELY', 'VERY_LIKELY')
     print('Faces:')
-    #Iterate over the number of facesd detected
+    #Iterate over the number of faces detected
     for face in faces:
         print('anger: {}'.format(likelihood_name[face.anger_likelihood]))
         print('joy: {}'.format(likelihood_name[face.joy_likelihood]))
